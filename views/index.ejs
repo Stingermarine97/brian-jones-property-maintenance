@@ -1,0 +1,76 @@
+<%- include('partials/header') %>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Property Maintenance You Can Count On</h1>
+      <p class="hero-sub">Serving New Hampshire's Seacoast region with reliable, professional property care since day one.</p>
+      <a href="/about#contact" class="btn btn-primary">Get a Free Quote</a>
+      <a href="/gallery" class="btn btn-outline">View Our Work</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">From routine lawn care to heavy land clearing, we handle it all.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#9752;</div>
+          <h3>Lawn Care</h3>
+          <p>Regular mowing, edging, seasonal cleanup, and lawn maintenance to keep your property looking its best year-round.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9878;</div>
+          <h3>Land Clearing</h3>
+          <p>Brush removal, grading, gravel driveways, and site preparation for new construction or improved access.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9964;</div>
+          <h3>Deck Restoration</h3>
+          <p>Deck and porch repair, staining, and restoration to extend the life and beauty of your outdoor living spaces.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#10052;</div>
+          <h3>Snow Handling</h3>
+          <p>Plowing, snow blowing, and ice management to keep your property safe and accessible through New England winters.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9884;</div>
+          <h3>Tree Trimming</h3>
+          <p>Professional tree trimming, pruning, and removal to maintain safety and improve the appearance of your landscape.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9681;</div>
+          <h3>Drainage</h3>
+          <p>Foundation drainage, window well installation, grading solutions, and water management to protect your home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-work">
+    <div class="container">
+      <h2 class="section-title">Recent Projects</h2>
+      <p class="section-subtitle">A sample of the work we do across the Seacoast.</p>
+      <div class="featured-grid">
+        <% featured.forEach(function(img) { %>
+          <div class="featured-item">
+            <img src="/thumbnails/<%= img.file.replace('.png', '.jpg') %>" alt="<%= img.alt %>" loading="lazy">
+          </div>
+        <% }); %>
+      </div>
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="/gallery" class="btn btn-primary">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Ready to Get Started?</h2>
+      <p>Whether it's a small cleanup or a major project, we're here to help. Reach out today for a free, no-obligation quote.</p>
+      <a href="/about#contact" class="btn btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

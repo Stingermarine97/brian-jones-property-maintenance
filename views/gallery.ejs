@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Project Gallery</h1>
+      <p>Browse through our completed projects across the NH Seacoast region.</p>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-filters">
+        <% categories.forEach(function(cat) { %>
+          <button class="filter-btn <%= cat.id === 'all' ? 'active' : '' %>" data-filter="<%= cat.id %>"><%= cat.label %></button>
+        <% }); %>
+      </div>
+      <div class="gallery-grid">
+        <% images.forEach(function(img) { %>
+          <div class="gallery-item" data-category="<%= img.category %>" data-full="/images/<%= img.file %>">
+            <img src="/thumbnails/<%= img.file.replace('.png', '.jpg') %>" alt="<%= img.alt %>" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-label"><%= categories.find(c => c.id === img.category)?.label || img.category %></span>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next">&#8250;</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+<%- include('partials/footer') %>

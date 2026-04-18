@@ -84,32 +84,9 @@ ul {
   color: var(--color-text);
 }
 
-.logo-placeholder {
-  width: 48px;
-  height: 48px;
-  background: var(--color-bg-alt);
-  border: 2px dashed var(--color-border);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: var(--color-text-muted);
-  letter-spacing: 0.05em;
-}
-
-.logo-text {
-  font-size: 1.1rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--color-primary-dark);
-}
-
-.logo-text small {
-  font-weight: 400;
-  font-size: 0.8rem;
-  color: var(--color-text-light);
+.logo-img {
+  height: 52px;
+  width: auto;
 }
 
 .main-nav {

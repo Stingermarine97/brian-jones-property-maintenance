@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 148" role="img" aria-label="Brian Jones Property Maintenance">
+
+  <!-- House outline -->
+  <polyline points="100,50 148,10 196,50" fill="none" stroke="#1b3a6b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="100" y1="50" x2="100" y2="88" stroke="#1b3a6b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="196" y1="50" x2="196" y2="88" stroke="#1b3a6b" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Window grid at peak -->
+  <rect x="140" y="16" width="8" height="8" fill="#1b3a6b"/>
+  <rect x="149" y="16" width="8" height="8" fill="#1b3a6b"/>
+  <rect x="140" y="25" width="8" height="8" fill="#1b3a6b"/>
+  <rect x="149" y="25" width="8" height="8" fill="#1b3a6b"/>
+
+  <!-- Hammer (head upper-left, rotated -45°) -->
+  <g transform="translate(133,62) rotate(-45)">
+    <rect x="-4" y="-26" width="8" height="50" rx="4" fill="#1b3a6b"/>
+    <rect x="-17" y="-40" width="30" height="15" rx="4" fill="#1b3a6b"/>
+  </g>
+
+  <!-- Wrench (head upper-right, rotated 45°) -->
+  <g transform="translate(155,58) rotate(45)">
+    <rect x="-4" y="-26" width="8" height="50" rx="4" fill="#1b3a6b"/>
+    <rect x="-14" y="-40" width="10" height="20" rx="3" fill="#1b3a6b"/>
+    <rect x="4"  y="-40" width="10" height="20" rx="3" fill="#1b3a6b"/>
+    <rect x="-14" y="-24" width="28" height="8"  rx="3" fill="#1b3a6b"/>
+  </g>
+
+  <!-- Green leaf -->
+  <path d="M 178,34 C 196,12 222,20 216,48 C 210,66 184,74 170,58 C 182,46 202,28 178,34 Z" fill="#4a8c1a"/>
+  <line x1="178" y1="34" x2="212" y2="56" stroke="#2d6e12" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- BRIAN JONES -->
+  <text x="148" y="110"
+        font-family="'Arial Black', Arial, sans-serif"
+        font-size="26" font-weight="900"
+        fill="#1b3a6b"
+        text-anchor="middle"
+        letter-spacing="2">BRIAN JONES</text>
+
+  <!-- PROPERTY MAINTENANCE -->
+  <text x="148" y="132"
+        font-family="Arial, sans-serif"
+        font-size="11.5" font-weight="700"
+        fill="#4a8c1a"
+        text-anchor="middle"
+        letter-spacing="2.5">PROPERTY MAINTENANCE</text>
+
+</svg>
